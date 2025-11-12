@@ -4,7 +4,7 @@ public class Question1 {
 
 	public static void main(String[] args) {
 
-        byte byteNum; //Q1
+        byte byteNum ; //Q1
         short shortNum;
         int intNum;
         long longNum;
@@ -14,16 +14,26 @@ public class Question1 {
         String letters;
         boolean isBoolean;
         
+        byteNum = 0; 
+        shortNum = 0;
+        intNum = 0;
+        longNum = 0L;
+        floatNum = 0.0f;
+        doubleNum = 0.0d;
+        letter = '\u0000';
+        letters = null;
+        isBoolean = false;
+        
         byteNum = 10;  //Q2
         shortNum = 100;
         intNum = 1000;
         longNum = 10000L;
         floatNum = 9.5f;
-        doubleNum = 10.5;
+        doubleNum = 10.5d;
         letter = 'a';
         letters = "ハロー";
         isBoolean = true;
-        
+ 
         
         System.out.println(byteNum + shortNum + intNum + longNum);  //Q3
         System.out.println(floatNum + doubleNum);
