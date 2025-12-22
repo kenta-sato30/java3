@@ -1,21 +1,20 @@
 package curriculum_B;
 
-import java.util.Arrays;
-import java.util.Collections;
+import java.util.Scanner;
 
 public class Question4 {
 
 	public static void main(String[] args) {
-		int[] score = { 1, 2, 3, 4, 5 }; //Q1
-		Arrays.sort(score);
+		int[] score = {1, 2, 3, 4, 5 }; //Q1
 		for (int i : score) {
 			System.out.println(i);
 		}
 		System.out.println();
 
-		Integer[] score2 = { 1, 2, 3, 4, 5 }; //Q2
-		Arrays.sort(score2, Collections.reverseOrder());
-		System.out.println(Arrays.asList(score2));
+		Integer[] score2 = {1, 2, 3, 4, 5 }; //Q2
+		for (int i = score2.length - 1; i >= 0; i--) {
+			System.out.println(score2[i]);
+		}
 		System.out.println();
 
 		int[] score3 = { 3, 5, 7, 9, 11 }; //Q3
@@ -26,7 +25,7 @@ public class Question4 {
 		System.out.println(sum);
 		System.out.println();
 		
-		int[] score4 = { 12, 7, 9, 21, 5, 18}; //Q4
+		int[] score4 = {12, 7, 9, 21, 5, 18}; //Q4
 		int max = score4[0];
 		int min = score4[0];
 		for (int i = 1; i < score4.length; i++) {
@@ -47,15 +46,17 @@ public class Question4 {
 		}
 		System.out.println();
 		
-		int[] score6 = { 4, 7, 10, 15, 20}; //Q6
-		int user = 1;
+		int[] score6 = {4, 7, 10, 15, 20}; //Q6
 		boolean found = false;
+		Scanner scanner = new Scanner(System.in);
+		int user = scanner.nextInt();
 		for (int u : score6) {
 			if ( u == user) {
 				found = true;
 				break;
 			}
 		}
+		scanner.close();
 		if (found) {
 			System.out.println( user + "は配列に含まれています");
 		} else {
@@ -98,15 +99,15 @@ public class Question4 {
 		System.out.println(min2);
 		System.out.println();
 		
-		int[][][] array4 = {{{1,2},{3,4},{5,6},{7,8}}}; //Q10
+		int[][][] array4 = {{{1,2},{3,4}},{{5,6},{7,8}}}; //Q10
 		for (int i = 0; i < array4.length; i++) {
 			for (int j = 0; j < array4[i].length; j++) {
 				for (int h = 0; h < array4[i][j].length; h++) {
 					System.out.println(array4[i][j][h]);
 				}
+				System.out.println();
 			}
 		}
-		System.out.println();
 		
 	
 	}
