@@ -15,9 +15,9 @@ public class Question5 {
 		helloWorld();//Q1
 		System.out.println();
 		
-		int Value = 10;//Q2
-		int result =doubleValue(Value);
-		System.out.println( Value + "を2倍にすると" + result + "です。");
+		int value = 10;//Q2
+		int result =doubleValue(value);
+		System.out.println( value + "を2倍にすると" + result + "です。");
 		System.out.println();
 		
 		int num1 = 7;//Q3
