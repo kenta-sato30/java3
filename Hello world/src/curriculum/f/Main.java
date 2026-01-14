@@ -8,5 +8,4 @@ public class Main {
 		emp.setName("佐藤太郎");
 		emp.showinfo();
 	}
-
 }

@@ -7,5 +7,4 @@ public class Main {
 		emp.setName("山田太郎");
 		emp.work();
 	}
-
 }
