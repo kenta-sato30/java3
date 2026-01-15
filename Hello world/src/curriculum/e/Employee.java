@@ -11,5 +11,4 @@ public class Employee {
 	public void work() {
 		System.out.println(name + "は働いています。");
 	}
-	
 }
