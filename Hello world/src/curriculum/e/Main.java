@@ -6,5 +6,6 @@ public class Main {
 		Employee emp = new Employee();
 		emp.setName("山田太郎");
 		emp.work();
+		
 	}
 }
