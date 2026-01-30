@@ -11,6 +11,10 @@ class FullTimeEmployee extends Employee {
 	
 	@Override
 	public int calculateDailyWage(int hoursWorked) {
+
+		if (hoursWorked < 0) {
+			throw new IllegalArgumentException("hoursWorked must be >= 0");
+		}
 		
 		if (hoursWorked <= 8) {
 			return  hoursWorked * HOURLY_RATE;
