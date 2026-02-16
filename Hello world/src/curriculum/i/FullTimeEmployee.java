@@ -4,6 +4,7 @@ class FullTimeEmployee extends Employee {
 	public FullTimeEmployee(String id , String name) {
 		super(id, name);
 	}
+	
 	@Override
 	public int calculateDailyWage(int hoursWorked) {
 		int houryRate = 1250;
