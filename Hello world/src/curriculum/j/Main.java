@@ -13,7 +13,7 @@ public class Main {
 			int cost = b.costForDay(9);
 			
 			String type = (b instanceof FullTimeEmployee) ? "正社員" : "契約社員";
-			String name = (b instanceof Employee) ? ((Employee)b).name : "不明";
+			String name = (b instanceof Employee) ? ((Employee) b).getName() : "不明";
 			System.out.printf("%s (%s) の日給: %,d 円%n", name, type, cost);
 		}
 	}
