@@ -14,9 +14,9 @@ public class FullTimeEmployee extends Employee {
 		if (hoursWorked <= STANDARD_HOURS) {
 			return hoursWorked * HOURLY_RATE;
 		}
-		int Pay = STANDARD_HOURS * HOURLY_RATE;
+		int pay = STANDARD_HOURS * HOURLY_RATE;
 		int overHours = hoursWorked - STANDARD_HOURS;
 		int overPay = (int)(overHours * HOURLY_RATE * OVERTIME_MULTIPLIER);
-		return Pay + overPay;
+		return pay + overPay;
 	}
 }
