@@ -18,7 +18,6 @@ public class Person {
 	public double bmi() {
 		return this.weight / (this.height * this.height);
 	}
-	
 	public void print() {
 		System.out.println("名前は" + this.name + "です");
 		System.out.println("年は" + this.age + "です");

@@ -12,7 +12,6 @@ class Main {
 		for (Person p : people) {
 		p.print();
 		}
-		
 		System.out.println("合計" + people.size() + "人です");
 	}
 	
