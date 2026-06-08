@@ -36,8 +36,9 @@ public class Character {
 	public void attack(Character target) {
 		int damage = this.at;
 		target.hp -= damage;
-		if(target.hp < 0) target.hp = 0;
-		System.out.println(this.name + "の攻撃" + target.name + "に" + damage + "ダメージ");
+		
+		target.setHp(target.getHp() - damage);
+		System.out.println(this.name + "の攻撃" + target.getName() + "に" + damage + "ダメージ");
 	}
 	
 	public boolean isAlive() {
@@ -49,6 +50,9 @@ public class Character {
 	public int getAt() {return at;}
 	public int getSp() {return sp;}
 	
-	public void getHp(int hp) {this.hp = hp;}
+	public void setHp(int hp) {
+		this.hp = hp;
+		if(this.hp < 0) this.hp = 0;
+		}
 	
 }
