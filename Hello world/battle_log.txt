@@ -1,0 +1,16 @@
+lvsDeamon
+
+Deamonの攻撃lHP:50
+lの攻撃DeamonHP:79
+Deamonの攻撃lHP:38
+lの攻撃DeamonHP:73
+Deamonの攻撃lHP:26
+lの攻撃DeamonHP:67
+Deamonの攻撃lHP:14
+lの攻撃DeamonHP:61
+Deamonの攻撃lHP:2
+lの攻撃DeamonHP:55
+Deamonの攻撃lHP:0
+
+ 結果　
+Deamonの勝利
